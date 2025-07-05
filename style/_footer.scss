@@ -1,0 +1,23 @@
+.footer {
+	margin-top: 2rem;
+	background: $primary-color;
+	color: black;
+	padding: 20px;
+	text-align: center;
+	padding-block: 20vh;
+	color: $light-color;
+
+	.social-media {
+		margin-top: 10px;
+		a {
+			margin: 0 10px;
+
+			.social-link {
+				width: 35px;
+			}
+		}
+	}
+	.bold a {
+		color: $light-color;
+	}
+}
