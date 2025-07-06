@@ -1,3 +1,11 @@
+@keyframes autoRun {
+	from {
+		left: 100%;
+	}
+	to {
+		left: calc(var(--width) * -1);
+	}
+}
 .show-up-blur {
 	animation: showUpBlurAnimation 1s forwards;
 }

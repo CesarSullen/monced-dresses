@@ -86,9 +86,41 @@
 	}
 }
 
+// slider
+.slider {
+	width: 100%;
+	height: var(--height);
+	overflow: hidden;
+	mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
+}
+
+.list {
+	display: flex;
+	width: 100%;
+	min-width: calc(var(--width) * var(--quantity));
+	position: relative;
+}
+
+.item {
+	width: var(--width);
+	height: var(--height);
+	position: absolute;
+	left: 100%;
+	animation: autoRun 15s linear infinite;
+	animation-delay: calc(
+		(15s / var(--quantity)) * (var(--position) - 1)
+	) !important;
+
+	h1 {
+		font-family: "PlayfairDisplay";
+		letter-spacing: 1px;
+		text-wrap: nowrap;
+	}
+}
+
 // why us
 .why-us {
-	background-color: $secondary-color;
+	background-color: $primary-color;
 	max-width: none;
 	width: 100%;
 	padding-block: 3rem;
@@ -111,6 +143,7 @@
 	flex-direction: column;
 	justify-content: center;
 	overflow: hidden;
+	color: $light-color;
 
 	.reason-icon {
 		width: 50px;
@@ -128,7 +161,6 @@
 		font-size: 0.95rem;
 		line-height: 1.6;
 		text-align: justify;
-		color: $light-color;
 	}
 
 	@media screen and (min-width: 700px) {
@@ -136,31 +168,33 @@
 	}
 }
 
-// featured dress
-.featured-dress {
+// about us
+.about-us {
 	max-width: none;
 	width: 100%;
 	padding: 0;
+
 	@media screen and (min-width: 700px) {
 		padding: 1rem;
 		max-width: 1000px;
 	}
 }
-.featured-dress-container {
+.about-us-container {
 	justify-items: center;
 }
-.featured-dress-img {
+.about-us-img {
 	width: 100%;
 	max-width: 350px;
 	border-radius: $border-radius-general;
 }
-.featured-dress-text {
+.about-us-text {
 	padding: 2rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	gap: 1rem;
-	background-color: $secondary-color;
+	background-color: $primary-color;
+	color: $light-color;
 
 	.section-subtitle {
 		margin-top: unset;
@@ -169,7 +203,7 @@
 	p {
 		text-align: justify;
 	}
-	.btn {
+	.ghost-btn {
 		margin-top: 1rem;
 	}
 
@@ -267,6 +301,12 @@ section.image-gallery {
 }
 
 // preview shop
+.shop-preview {
+	.section-title,
+	.section-subtitle {
+		color: $primary-color;
+	}
+}
 .shop-preview-container {
 	display: flex;
 	flex-direction: column;
@@ -344,8 +384,11 @@ section.image-gallery {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: linear-gradient(rgba($bg-color, 0.3), rgba($bg-color, 0.9));
-	box-shadow: 0 -15px 50px rgba($bg-color, 0.4);
+	background: linear-gradient(
+		rgba($secondary-color, 0.3),
+		rgba($secondary-color, 0.9)
+	);
+	box-shadow: 0 -15px 50px rgba($secondary-color, 0.4);
 	width: 100%;
 	height: 30%;
 	z-index: 0;

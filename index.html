@@ -19,7 +19,7 @@
 	<body id="body">
 		<nav class="nav">
 			<a href="./index.html" class="nav-icon-wrapper">
-				<img src="./assets/icons/logo-name-white.png" class="nav-icon" />
+				<img src="./assets/icons/logo-name-color.png" class="nav-icon" />
 			</a>
 			<button id="toggle-btn" class="toggle-btn">
 				<span class="bar"></span>
@@ -89,6 +89,25 @@
 			</div>
 		</header>
 
+		<div class="slider" style="--width: 200px; --height: 50px; --quantity: 5">
+			<div class="list">
+				<div class="item" style="--position: 1">
+					<h1>Handmade</h1>
+				</div>
+				<div class="item" style="--position: 2">
+					<h1>Eco-Friendly</h1>
+				</div>
+				<div class="item" style="--position: 3">
+					<h1>Limited</h1>
+				</div>
+				<div class="item" style="--position: 4">
+					<h1>Customizable</h1>
+				</div>
+				<div class="item" style="--position: 5">
+					<h1>Recycled</h1>
+				</div>
+			</div>
+		</div>
 		<div class="body-content">
 			<section id="why-us" class="why-us">
 				<h1 class="section-title fade-in">why Monced Dresses?</h1>
@@ -129,14 +148,14 @@
 				</div>
 			</section>
 
-			<section id="featured-dress" class="featured-dress">
-				<div class="featured-dress-container two-columns">
+			<section id="about-us" class="about-us">
+				<div class="about-us-container two-columns">
 					<img
-						class="featured-dress-img fade-in"
+						class="about-us-img fade-in"
 						src="./assets/dresses/featured.png"
 					/>
-					<div class="featured-dress-text">
-						<h1 class="section-title blur-out">our best seller</h1>
+					<div class="about-us-text">
+						<h1 class="section-title blur-out">about me</h1>
 						<h2 class="section-subtitle blur-out">Lorem ipsum dolor sit</h2>
 						<p class="blur-out">
 							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
@@ -144,7 +163,7 @@
 							voluptatum dolorem blanditiis nobis culpa facere amet vitae beatae
 							corrupti quibusdam? Necessitatibus, voluptates nisi?
 						</p>
-						<button class="btn blur-out">more details</button>
+						<button class="ghost-btn blur-out">more details</button>
 					</div>
 				</div>
 			</section>
@@ -237,7 +256,6 @@
 								class="preview-card-img"
 							/>
 							<h3 class="product-card-title">Lorem ipsum dolor</h3>
-							<div class="product-card-overlay"></div>
 						</a>
 					</div>
 					<div class="product-card-container rotate-in">
@@ -248,7 +266,6 @@
 								class="preview-card-img"
 							/>
 							<h3 class="product-card-title">Lorem ipsum dolor</h3>
-							<div class="product-card-overlay"></div>
 						</a>
 					</div>
 					<div class="product-card-container rotate-in">
@@ -259,12 +276,12 @@
 								class="preview-card-img"
 							/>
 							<h3 class="product-card-title">Lorem ipsum dolor</h3>
-							<div class="product-card-overlay"></div>
 						</a>
 					</div>
 				</div>
-
-				<button class="btn fade-in">explore the shop</button>
+				<a href="" class="fade-in"
+					><button class="btn">explore the shop</button></a
+				>
 			</section>
 		</div>
 

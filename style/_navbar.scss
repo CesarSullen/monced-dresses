@@ -49,7 +49,7 @@
 		font-size: 0.9rem;
 
 		p {
-			color: $light-color;
+			color: $primary-color;
 			position: relative;
 
 			&::after {
@@ -59,7 +59,7 @@
 				left: 0;
 				width: 0;
 				height: 2px;
-				background-color: $light-color;
+				background-color: $primary-color;
 				transition: width 0.3s ease;
 			}
 			&:hover::after {
@@ -137,7 +137,7 @@
 	.bar {
 		height: 2px;
 		width: 100%;
-		background-color: $light-color;
+		background-color: $primary-color;
 		border-radius: 2px;
 		transition: transform 0.4s ease, opacity 0.2s ease;
 	}
