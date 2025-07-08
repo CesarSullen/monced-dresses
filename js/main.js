@@ -31,7 +31,7 @@ links.forEach((link) =>
 
 // Interception Observer
 const sections = document.querySelectorAll(
-	".fade-in, .rotate-in, .zoom-up, .blur-out"
+	".fade-in, .rotate-in, .rotate-in-right, .zoom-in, .blur-out"
 );
 
 const observer = new IntersectionObserver(
