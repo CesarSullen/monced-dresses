@@ -12,6 +12,10 @@
 	background: $secondary-color;
 	border-bottom: 1px solid $primary-color;
 	box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+
+	@media screen and (min-width: 700px) {
+		justify-content: center;
+	}
 }
 .nav-icon-wrapper {
 	display: flex;
@@ -56,11 +60,12 @@
 				content: "";
 				position: absolute;
 				bottom: -5px;
-				left: 0;
+				left: 50%;
 				width: 0;
 				height: 2px;
 				background-color: $primary-color;
 				transition: width 0.3s ease;
+				transform: translateX(-50%);
 			}
 			&:hover::after {
 				width: 100%;
@@ -75,6 +80,7 @@
 		display: flex;
 		gap: 10px;
 		border-radius: 100vh;
+		font-size: 1rem;
 	}
 }
 .side-bar {
