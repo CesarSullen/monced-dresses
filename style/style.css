@@ -62,7 +62,7 @@ hr {
 }
 
 body {
-  background-color: #f8becc;
+  background-color: #eddde1;
   color: #19181f;
 }
 
@@ -89,7 +89,7 @@ a {
   max-width: 600px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #f8becc;
+  color: #eddde1;
   text-align: center;
   font-weight: 600;
   position: relative;
@@ -104,7 +104,7 @@ a {
   padding: 0.5rem 1.6rem;
   border-radius: 100px;
   background: transparent;
-  border: 2px solid #f8becc;
+  border: 2px solid #eddde1;
   font-size: 1rem;
   cursor: pointer;
   width: 100%;
@@ -112,7 +112,7 @@ a {
   max-width: 600px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #f8becc;
+  color: #eddde1;
   text-align: center;
   font-weight: 600;
   position: relative;
@@ -120,7 +120,7 @@ a {
   transition: all 0.3s ease;
 }
 .ghost-btn:hover {
-  background: #f8becc;
+  background: #eddde1;
   color: #8e46ce;
 }
 
@@ -152,7 +152,7 @@ section {
 
 .card {
   border-radius: 12px;
-  background: #f8becc;
+  background: #eddde1;
   overflow: hidden;
   border: solid 1px #8e46ce;
 }
@@ -297,7 +297,7 @@ section {
   align-items: center;
   width: 100%;
   font-weight: bold;
-  background: #f8becc;
+  background: #eddde1;
   border-bottom: 1px solid #8e46ce;
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
 }
@@ -387,7 +387,7 @@ section {
   background-color: #8e46ce;
   z-index: -1;
   gap: 50px;
-  border-right: solid 1px #f8becc;
+  border-right: solid 1px #eddde1;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -545,7 +545,7 @@ section {
   gap: 10px;
 }
 .cta-section .btn {
-  background-color: #f8becc;
+  background-color: #eddde1;
   color: #8e46ce;
 }
 @media screen and (min-width: 700px) {
@@ -675,7 +675,7 @@ section {
   top: 0;
   right: 2rem;
   font-size: 4rem;
-  color: #f8becc;
+  color: #eddde1;
   animation: pulseAnimation 1s infinite;
 }
 .about-us-text .section-subtitle {
@@ -864,7 +864,7 @@ section.image-gallery {
   position: relative;
   width: 100%;
   aspect-ratio: 3/4;
-  background-color: #f8becc;
+  background-color: #eddde1;
   border-radius: 12px;
   overflow: hidden;
   text-decoration: none;
@@ -918,8 +918,8 @@ section.image-gallery {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(rgba(248, 190, 204, 0.3), rgba(248, 190, 204, 0.9));
-  box-shadow: 0 -15px 50px rgba(248, 190, 204, 0.4);
+  background: linear-gradient(rgba(237, 221, 225, 0.3), rgba(237, 221, 225, 0.9));
+  box-shadow: 0 -15px 50px rgba(237, 221, 225, 0.4);
   width: 100%;
   height: 30%;
   z-index: 0;
