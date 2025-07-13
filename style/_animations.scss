@@ -106,14 +106,22 @@
 		transform: translateX(0dvw);
 	}
 }
-@keyframes pulseAnimation {
+@keyframes slide-left {
 	0% {
-		scale: 1;
+		transform: translateX(0);
 	}
-	20% {
-		scale: 1.2;
+	100% {
+		transform: translateX(-30%);
+	}
+}
+
+@keyframes fadeInColumn {
+	from {
+		opacity: 0;
+		transform: translateX(100%);
 	}
 	to {
-		scale: 0.9;
+		opacity: 1;
+		transform: translateX(0);
 	}
 }
