@@ -12,8 +12,8 @@
 
 // Variables
 $primary-color: #8e46ce;
-$secondary-color: #eddde1;
-$light-color: #f8d1d1;
+$secondary-color: #fff0f4;
+$light-color: #fbf4f6;
 $dark-color: #19181f;
 $synth-color: #006dff;
 $border-general: solid 1px rgba($primary-color, 0.4);
@@ -27,8 +27,8 @@ $border-radius-rounded: 100px;
 	font-weight: 400;
 }
 @font-face {
-	font-family: "PlayfairDisplay";
-	src: url("../typography/PlayfairDisplay-Regular.ttf") format("truetype");
+	font-family: "Alice";
+	src: url("../typography/Alice-Regular.ttf") format("truetype");
 	font-weight: 400;
 }
 
@@ -72,7 +72,6 @@ body {
 	display: grid;
 	justify-items: center;
 	grid-template-columns: 1fr;
-	gap: 50px;
 }
 a {
 	color: $light-color;
@@ -128,9 +127,10 @@ section {
 	text-align: center;
 	padding: 2rem;
 	max-width: 1200px;
+	margin-bottom: 50px;
 }
 .section-title {
-	font-family: "PlayfairDisplay";
+	font-family: "Alice";
 	color: $light-color;
 	text-transform: capitalize;
 	font-size: 2rem;

@@ -52,7 +52,7 @@
 	line-height: 0.8;
 	text-transform: uppercase;
 	margin-top: 5rem;
-	font-family: "PlayfairDisplay";
+	font-family: "Alice";
 
 	@media screen and (min-width: 700px) {
 		font-size: 8.5dvw;
@@ -115,7 +115,7 @@
 	) !important;
 
 	h1 {
-		font-family: "PlayfairDisplay";
+		font-family: "Alice";
 		letter-spacing: 1px;
 		text-wrap: nowrap;
 	}
@@ -128,6 +128,10 @@
 	width: 100%;
 	padding-block: 3rem;
 	padding-inline: 2rem;
+
+	@media screen and (max-width: 700px) {
+		margin-bottom: 0px;
+	}
 }
 .why-us-container {
 	justify-self: center;
@@ -141,22 +145,41 @@
 	}
 }
 .reason {
-	background-color: transparent;
+	background: url("../assets/dresses/preview_10.png");
+	background-color: rgba(0, 0, 0, 0.6);
+	background-blend-mode: multiply;
+	padding: 0.5rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	overflow: hidden;
 	color: $light-color;
+	position: relative;
+	width: 100%;
+	aspect-ratio: 4/3;
 
+	&:hover,
+	&:active {
+		background-color: rgba(0, 0, 0, 0.8);
+
+		p {
+			opacity: 1;
+		}
+	}
 	.reason-icon {
-		width: 50px;
+		width: 35px;
+		position: absolute;
+		top: 5%;
+		left: 5%;
 	}
 
 	h3 {
-		font-family: "PlayfairDisplay";
+		font-family: "Alice";
 		font-size: 1.5rem;
 		text-transform: capitalize;
 		letter-spacing: 2px;
+		position: absolute;
+		bottom: 5%;
 	}
 
 	p {
@@ -164,6 +187,7 @@
 		font-size: 0.95rem;
 		line-height: 1.6;
 		text-align: justify;
+		opacity: 0;
 	}
 
 	@media screen and (min-width: 700px) {
@@ -184,11 +208,18 @@
 }
 .about-us-container {
 	justify-items: center;
+
+	@media screen and (max-width: 700px) {
+		gap: 0;
+	}
 }
 .about-us-img {
 	width: 100%;
-	max-width: 350px;
-	border-radius: $border-radius-general;
+
+	@media screen and (min-width: 700px) {
+		max-width: 350px;
+		border-radius: $border-radius-general;
+	}
 }
 .about-us-text {
 	padding: 2rem;
@@ -200,16 +231,6 @@
 	color: $light-color;
 	position: relative;
 
-	&::after {
-		position: absolute;
-		content: "\2661";
-		top: 0;
-		right: 2rem;
-		font-size: 4rem;
-		color: $secondary-color;
-		animation: pulseAnimation 1s infinite;
-	}
-
 	.section-subtitle {
 		margin-top: unset;
 		margin-bottom: unset;
@@ -217,10 +238,19 @@
 	p {
 		text-align: justify;
 	}
-	.ghost-btn {
-		margin-top: 1rem;
-		&:hover {
-			scale: 0.97;
+	.social {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 5px;
+		position: relative;
+
+		img {
+			width: 100%;
+			max-width: 40px;
+		}
+		p {
+			font-size: 1.3rem;
 		}
 	}
 
@@ -233,14 +263,14 @@
 		p {
 			text-align: left;
 		}
-		.btn {
-			max-width: 150px;
+		.social {
+			justify-content: left;
 		}
 	}
 }
 
 // image gallery
-section.image-gallery {
+.image-gallery {
 	padding: 0;
 }
 
@@ -265,6 +295,7 @@ section.image-gallery {
 	gap: 5px;
 	max-width: 100%;
 	padding: 5px;
+
 	@media (min-width: 700px) {
 		grid-template-columns: repeat(5, 1fr);
 		grid-auto-rows: minmax(200px, auto);
@@ -351,7 +382,7 @@ section.image-gallery {
 }
 
 .feature-title {
-	font-family: "PlayfairDisplay";
+	font-family: "Alice";
 	font-size: 1.2rem;
 	letter-spacing: 1px;
 	color: $primary-color;
@@ -411,9 +442,8 @@ section.image-gallery {
 	width: 100%;
 
 	.product-card {
-		position: relative;
 		width: 100%;
-		aspect-ratio: 3/4;
+		aspect-ratio: 4/3;
 		background-color: $secondary-color;
 		border-radius: $border-radius-general;
 		overflow: hidden;
@@ -428,24 +458,6 @@ section.image-gallery {
 				transform: scale(1.1);
 			}
 		}
-		.product-card-title {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			background: $primary-color;
-			border-radius: $border-radius-rounded;
-			padding: 0.75rem;
-			margin: 0.75rem;
-			letter-spacing: 1.5px;
-			font-size: 0.9rem;
-			text-transform: capitalize;
-			white-space: nowrap;
-			text-overflow: ellipsis;
-			text-align: center;
-			color: $light-color;
-			z-index: 1;
-		}
 	}
 
 	@media screen and (min-width: 768px) {
@@ -454,6 +466,7 @@ section.image-gallery {
 		}
 		.product-card {
 			max-width: 250px;
+			aspect-ratio: 3/4;
 		}
 	}
 }

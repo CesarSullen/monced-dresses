@@ -17,8 +17,8 @@
   font-weight: 400;
 }
 @font-face {
-  font-family: "PlayfairDisplay";
-  src: url("../typography/PlayfairDisplay-Regular.ttf") format("truetype");
+  font-family: "Alice";
+  src: url("../typography/Alice-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 .important-text {
@@ -57,12 +57,12 @@
 
 hr {
   width: 100%;
-  background-color: #f8d1d1;
+  background-color: #fbf4f6;
   height: 2px;
 }
 
 body {
-  background-color: #eddde1;
+  background-color: #fff0f4;
   color: #19181f;
 }
 
@@ -70,11 +70,10 @@ body {
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr;
-  gap: 50px;
 }
 
 a {
-  color: #f8d1d1;
+  color: #fbf4f6;
 }
 
 .btn {
@@ -89,7 +88,7 @@ a {
   max-width: 600px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #eddde1;
+  color: #fff0f4;
   text-align: center;
   font-weight: 600;
   position: relative;
@@ -104,7 +103,7 @@ a {
   padding: 0.5rem 1.6rem;
   border-radius: 100px;
   background: transparent;
-  border: 2px solid #eddde1;
+  border: 2px solid #fff0f4;
   font-size: 1rem;
   cursor: pointer;
   width: 100%;
@@ -112,7 +111,7 @@ a {
   max-width: 600px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #eddde1;
+  color: #fff0f4;
   text-align: center;
   font-weight: 600;
   position: relative;
@@ -120,7 +119,7 @@ a {
   transition: all 0.3s ease;
 }
 .ghost-btn:hover {
-  background: #eddde1;
+  background: #fff0f4;
   color: #8e46ce;
 }
 
@@ -128,11 +127,12 @@ section {
   text-align: center;
   padding: 2rem;
   max-width: 1200px;
+  margin-bottom: 50px;
 }
 
 .section-title {
-  font-family: "PlayfairDisplay";
-  color: #f8d1d1;
+  font-family: "Alice";
+  color: #fbf4f6;
   text-transform: capitalize;
   font-size: 2rem;
   letter-spacing: 2px;
@@ -144,7 +144,7 @@ section {
 }
 
 .section-subtitle {
-  color: #f8d1d1;
+  color: #fbf4f6;
   margin-top: 1rem;
   margin-bottom: 2rem;
   font-size: 1.2rem;
@@ -152,7 +152,7 @@ section {
 
 .card {
   border-radius: 12px;
-  background: #eddde1;
+  background: #fff0f4;
   overflow: hidden;
   border: solid 1px #8e46ce;
 }
@@ -297,7 +297,7 @@ section {
   align-items: center;
   width: 100%;
   font-weight: bold;
-  background: #eddde1;
+  background: #fff0f4;
   border-bottom: 1px solid #8e46ce;
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
 }
@@ -387,7 +387,7 @@ section {
   background-color: #8e46ce;
   z-index: -1;
   gap: 50px;
-  border-right: solid 1px #eddde1;
+  border-right: solid 1px #fff0f4;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -406,7 +406,7 @@ section {
   display: flex;
   gap: 10px;
   align-items: center;
-  color: #f8d1d1;
+  color: #fbf4f6;
   font-size: 1.5rem;
 }
 
@@ -461,7 +461,7 @@ section {
   padding: 20px;
   text-align: center;
   padding-block: 20vh;
-  color: #f8d1d1;
+  color: #fbf4f6;
 }
 .footer .social-media {
   margin-top: 10px;
@@ -473,7 +473,7 @@ section {
   width: 35px;
 }
 .footer .bold a {
-  color: #f8d1d1;
+  color: #fbf4f6;
 }
 
 .header {
@@ -494,7 +494,7 @@ section {
 .header-content {
   height: 95%;
   padding: 2rem;
-  color: #f8d1d1;
+  color: #fbf4f6;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -518,7 +518,7 @@ section {
   line-height: 0.8;
   text-transform: uppercase;
   margin-top: 5rem;
-  font-family: "PlayfairDisplay";
+  font-family: "Alice";
 }
 @media screen and (min-width: 700px) {
   .header-title {
@@ -531,7 +531,7 @@ section {
 .header-subtitle {
   font-size: 1.2rem;
   max-width: 600px;
-  color: #f8d1d1;
+  color: #fbf4f6;
   font-weight: bold;
   max-width: 400px;
   /* 	@media screen and (min-width: 700px) {
@@ -545,7 +545,7 @@ section {
   gap: 10px;
 }
 .cta-section .btn {
-  background-color: #eddde1;
+  background-color: #fff0f4;
   color: #8e46ce;
 }
 @media screen and (min-width: 700px) {
@@ -581,7 +581,7 @@ section {
   animation-delay: calc(15s / var(--quantity) * (var(--position) - 1)) !important;
 }
 .item h1 {
-  font-family: "PlayfairDisplay";
+  font-family: "Alice";
   letter-spacing: 1px;
   text-wrap: nowrap;
 }
@@ -592,6 +592,11 @@ section {
   width: 100%;
   padding-block: 3rem;
   padding-inline: 2rem;
+}
+@media screen and (max-width: 700px) {
+  .why-us {
+    margin-bottom: 0px;
+  }
 }
 
 .why-us-container {
@@ -609,27 +614,45 @@ section {
 }
 
 .reason {
-  background-color: transparent;
+  background: url("../assets/dresses/preview_10.png");
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+  padding: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
-  color: #f8d1d1;
+  color: #fbf4f6;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/3;
+}
+.reason:hover, .reason:active {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.reason:hover p, .reason:active p {
+  opacity: 1;
 }
 .reason .reason-icon {
-  width: 50px;
+  width: 35px;
+  position: absolute;
+  top: 5%;
+  left: 5%;
 }
 .reason h3 {
-  font-family: "PlayfairDisplay";
+  font-family: "Alice";
   font-size: 1.5rem;
   text-transform: capitalize;
   letter-spacing: 2px;
+  position: absolute;
+  bottom: 5%;
 }
 .reason p {
   margin-top: 0.8rem;
   font-size: 0.95rem;
   line-height: 1.6;
   text-align: justify;
+  opacity: 0;
 }
 @media screen and (min-width: 700px) {
   .reason {
@@ -652,11 +675,20 @@ section {
 .about-us-container {
   justify-items: center;
 }
+@media screen and (max-width: 700px) {
+  .about-us-container {
+    gap: 0;
+  }
+}
 
 .about-us-img {
   width: 100%;
-  max-width: 350px;
-  border-radius: 12px;
+}
+@media screen and (min-width: 700px) {
+  .about-us-img {
+    max-width: 350px;
+    border-radius: 12px;
+  }
 }
 
 .about-us-text {
@@ -666,17 +698,8 @@ section {
   justify-content: space-between;
   gap: 1rem;
   background-color: #8e46ce;
-  color: #f8d1d1;
+  color: #fbf4f6;
   position: relative;
-}
-.about-us-text::after {
-  position: absolute;
-  content: "♡";
-  top: 0;
-  right: 2rem;
-  font-size: 4rem;
-  color: #eddde1;
-  animation: pulseAnimation 1s infinite;
 }
 .about-us-text .section-subtitle {
   margin-top: unset;
@@ -685,11 +708,19 @@ section {
 .about-us-text p {
   text-align: justify;
 }
-.about-us-text .ghost-btn {
-  margin-top: 1rem;
+.about-us-text .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  position: relative;
 }
-.about-us-text .ghost-btn:hover {
-  scale: 0.97;
+.about-us-text .social img {
+  width: 100%;
+  max-width: 40px;
+}
+.about-us-text .social p {
+  font-size: 1.3rem;
 }
 @media screen and (min-width: 700px) {
   .about-us-text {
@@ -701,12 +732,12 @@ section {
   .about-us-text p {
     text-align: left;
   }
-  .about-us-text .btn {
-    max-width: 150px;
+  .about-us-text .social {
+    justify-content: left;
   }
 }
 
-section.image-gallery {
+.image-gallery {
   padding: 0;
 }
 
@@ -805,7 +836,7 @@ section.image-gallery {
 }
 
 .feature-title {
-  font-family: "PlayfairDisplay";
+  font-family: "Alice";
   font-size: 1.2rem;
   letter-spacing: 1px;
   color: #8e46ce;
@@ -861,10 +892,9 @@ section.image-gallery {
   width: 100%;
 }
 .product-card-container .product-card {
-  position: relative;
   width: 100%;
-  aspect-ratio: 3/4;
-  background-color: #eddde1;
+  aspect-ratio: 4/3;
+  background-color: #fff0f4;
   border-radius: 12px;
   overflow: hidden;
   text-decoration: none;
@@ -877,30 +907,13 @@ section.image-gallery {
 .product-card-container .product-card:hover .preview-card-img {
   transform: scale(1.1);
 }
-.product-card-container .product-card .product-card-title {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #8e46ce;
-  border-radius: 100px;
-  padding: 0.75rem;
-  margin: 0.75rem;
-  letter-spacing: 1.5px;
-  font-size: 0.9rem;
-  text-transform: capitalize;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  text-align: center;
-  color: #f8d1d1;
-  z-index: 1;
-}
 @media screen and (min-width: 768px) {
   .product-card-container .product-card-container {
     gap: 15px;
   }
   .product-card-container .product-card {
     max-width: 250px;
+    aspect-ratio: 3/4;
   }
 }
 
@@ -918,8 +931,8 @@ section.image-gallery {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(rgba(237, 221, 225, 0.3), rgba(237, 221, 225, 0.9));
-  box-shadow: 0 -15px 50px rgba(237, 221, 225, 0.4);
+  background: linear-gradient(rgba(255, 240, 244, 0.3), rgba(255, 240, 244, 0.9));
+  box-shadow: 0 -15px 50px rgba(255, 240, 244, 0.4);
   width: 100%;
   height: 30%;
   z-index: 0;
