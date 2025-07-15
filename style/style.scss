@@ -50,7 +50,7 @@
 .header-title {
 	font-size: 18dvw;
 	line-height: 0.8;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	margin-top: 5rem;
 	font-family: "Alice";
 
@@ -126,13 +126,14 @@
 // why us
 .why-us {
 	background-color: $primary-color;
-	max-width: none;
-	width: 100%;
 	padding-block: 3rem;
-	padding-inline: 2rem;
+	width: 100%;
+	padding-inline: 0rem;
 
-	@media screen and (max-width: 700px) {
-		margin-bottom: 0px;
+	@media screen and (min-width: 700px) {
+		padding: 2rem;
+		margin-bottom: 2rem;
+		max-width: none;
 	}
 }
 .why-us-container {
@@ -140,10 +141,11 @@
 	display: grid;
 	justify-items: center;
 	grid-template-columns: repeat(1, 1fr);
-	gap: 30px;
-	max-width: 1200px;
+
 	@media screen and (min-width: 700px) {
+		max-width: 1200px;
 		grid-template-columns: repeat(3, 1fr);
+		gap: 30px;
 	}
 }
 .reason {
@@ -159,7 +161,6 @@
 	width: 100%;
 	aspect-ratio: 4/3;
 	text-align: left;
-	border-radius: $border-radius-general;
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 
 	&:hover {
@@ -184,6 +185,7 @@
 
 	@media screen and (min-width: 700px) {
 		max-width: 320px;
+		border-radius: $border-radius-general;
 	}
 }
 
@@ -441,6 +443,7 @@
 			width: 100%;
 			z-index: 1;
 			transition: all 0.2s ease-out;
+			transform: scale(1.5) translateX(-5%);
 		}
 		&::after {
 			content: "";
