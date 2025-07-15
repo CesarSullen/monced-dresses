@@ -515,7 +515,8 @@ section {
 
 .copyright {
   font-size: 0.85rem;
-  justify-self: center;
+  justify-self: center !important;
+  text-align: center !important;
 }
 
 .footer-links {
@@ -572,10 +573,8 @@ section {
   color: #19181f;
 }
 
-@media (max-width: 700px) {
-  .social-media {
-    justify-content: center;
-  }
+.social-media {
+  justify-content: center;
 }
 .header {
   background-image: url(../assets/header.jpg);
