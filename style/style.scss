@@ -130,6 +130,10 @@
 	width: 100%;
 	padding-inline: 0rem;
 
+	.section-title {
+		margin-bottom: 2rem;
+	}
+
 	@media screen and (min-width: 700px) {
 		padding: 2rem;
 		margin-bottom: 2rem;
@@ -499,7 +503,7 @@
 	margin-top: 1.5rem;
 
 	@media screen and (min-width: 700px) {
-		max-width: 250px;
+		max-width: 300px;
 	}
 }
 

@@ -81,7 +81,7 @@ a {
   border-radius: 100px;
   background: #8e46ce;
   border: 2px solid #8e46ce;
-  font-size: 1rem;
+  font-size: 1.1rem;
   cursor: pointer;
   width: 100%;
   min-width: 200px;
@@ -145,7 +145,6 @@ section {
 
 .section-subtitle {
   color: #fbf4f6;
-  margin-top: 1rem;
   margin-bottom: 2rem;
   font-size: 1.2rem;
 }
@@ -694,6 +693,9 @@ section {
   width: 100%;
   padding-inline: 0rem;
 }
+.why-us .section-title {
+  margin-bottom: 2rem;
+}
 @media screen and (min-width: 700px) {
   .why-us {
     padding: 2rem;
@@ -1070,7 +1072,7 @@ section {
 }
 @media screen and (min-width: 700px) {
   .shop-preview .btn {
-    max-width: 250px;
+    max-width: 300px;
   }
 }
 
