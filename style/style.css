@@ -329,6 +329,11 @@ section {
 .nav-icon {
   width: 100%;
   max-width: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  padding: 0.5rem;
 }
 @media screen and (min-width: 700px) {
   .nav-icon {

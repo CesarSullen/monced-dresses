@@ -21,7 +21,6 @@
 	display: flex;
 	gap: 10px;
 	align-items: center;
-
 	&:hover {
 		.nav-title {
 			color: $primary-color;
@@ -32,7 +31,11 @@
 .nav-icon {
 	width: 100%;
 	max-width: 100px;
-
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: auto;
+	padding: 0.5rem;
 	@media screen and (min-width: 700px) {
 		max-width: 120px;
 	}
