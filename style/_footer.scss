@@ -39,19 +39,20 @@
 
 .footer-logo {
 	width: 150px;
-	margin-bottom: 15px;
 }
 
 .footer-description {
 	font-size: 0.9rem;
 	line-height: 1.5;
 	margin-bottom: 15px;
+
+	@media screen and (min-width: 700px) {
+		text-align: left;
+	}
 }
 
 .copyright {
 	font-size: 0.85rem;
-	justify-self: center !important;
-	text-align: center !important;
 }
 
 .footer-links {
@@ -59,6 +60,11 @@
 
 	li {
 		margin-bottom: 10px;
+		text-align: left;
+
+		@media screen and (min-width: 700px) {
+			transform: translateX(40%);
+		}
 	}
 
 	a {
@@ -68,7 +74,7 @@
 		transition: color 0.3s ease;
 
 		&:hover {
-			color: $dark-color;
+			opacity: 0.7;
 		}
 
 		.social-media {
@@ -95,7 +101,7 @@
 	line-height: 1.6;
 
 	a:hover {
-		color: $dark-color;
+		opacity: 0.7;
 	}
 }
 
@@ -112,17 +118,18 @@
 		align-items: center;
 
 		&:hover {
-			color: $dark-color;
+			opacity: 0.7;
 		}
 	}
 
 	.so-logo {
 		width: 50px;
+		margin-bottom: 15px;
 	}
 }
 
 .social-media {
+	display: flex;
 	justify-content: center;
-	@media (max-width: 700px) {
-	}
+	gap: 20px;
 }
