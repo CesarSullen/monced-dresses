@@ -94,7 +94,7 @@
 	height: 100vh;
 	transform: translateX(-200%);
 	padding: 1rem;
-	background-color: $primary-color;
+	background-color: $light-color;
 	z-index: -1;
 	gap: 50px;
 	border-right: solid 1px $secondary-color;
@@ -114,7 +114,7 @@
 	display: flex;
 	gap: 10px;
 	align-items: center;
-	color: $light-color;
+	color: $primary-color;
 	font-size: 1.5rem;
 }
 .side-bar-social {
