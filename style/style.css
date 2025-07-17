@@ -133,7 +133,6 @@ section {
 .section-title {
   font-family: "Alice";
   color: #fbf4f6;
-  text-transform: capitalize;
   font-size: 2rem;
   letter-spacing: 2px;
 }
@@ -485,7 +484,6 @@ section {
   max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
   gap: 20px;
 }
@@ -498,6 +496,8 @@ section {
 
 .footer-column {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 .footer-column h3 {
   font-size: 1.2rem;
@@ -512,6 +512,12 @@ section {
 
 .footer-logo {
   width: 150px;
+  align-self: center;
+}
+@media screen and (min-width: 700px) {
+  .footer-logo {
+    align-self: flex-start;
+  }
 }
 
 .footer-description {
@@ -558,7 +564,7 @@ section {
 }
 
 .social-link {
-  width: 40px;
+  width: 30px;
   aspect-ratio: 1;
   transition: transform 0.3s ease;
 }
@@ -716,23 +722,25 @@ section {
 }
 
 .why-us {
-  padding-block: 3rem;
   width: 100%;
-  padding-inline: 0rem;
+  padding: 0rem;
+  position: relative;
 }
 .why-us .section-title {
-  background-color: #ff5d8f;
-  padding-block: 2rem;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 2;
 }
 @media screen and (min-width: 700px) {
   .why-us .section-title {
-    background-color: transparent;
-    color: #ff5d8f;
+    top: 5%;
   }
 }
 @media screen and (min-width: 700px) {
   .why-us {
-    margin-bottom: 2rem;
     max-width: none;
   }
 }
@@ -743,9 +751,11 @@ section {
   justify-items: center;
   grid-template-columns: repeat(1, 1fr);
 }
+.why-us-container:hover .reason:not(:hover) {
+  filter: grayscale(1);
+}
 @media screen and (min-width: 700px) {
   .why-us-container {
-    max-width: 1200px;
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -761,14 +771,9 @@ section {
   overflow: hidden;
   color: #fbf4f6;
   width: 100%;
-  aspect-ratio: 4/3;
+  aspect-ratio: 3/4;
   text-align: left;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-.reason:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  transform: translateY(-8px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 .reason h3 {
   font-family: "Alice";
@@ -782,12 +787,6 @@ section {
   line-height: 1.6;
   text-align: justify;
 }
-@media screen and (min-width: 700px) {
-  .reason {
-    max-width: 320px;
-  }
-}
-
 .image-gallery {
   padding: 0 !important;
   max-width: 100% !important;
@@ -1047,12 +1046,6 @@ section {
   width: 100%;
   padding: 0;
 }
-@media screen and (min-width: 700px) {
-  .about-us {
-    padding: 1rem;
-    max-width: 1000px;
-  }
-}
 
 .about-us-container {
   justify-items: center;
@@ -1061,6 +1054,9 @@ section {
 
 .about-us-img {
   width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: top;
 }
 .about-us-text {
   padding: 2rem;
@@ -1086,7 +1082,7 @@ section {
 }
 .about-us-text .social img {
   width: 100%;
-  max-width: 40px;
+  max-width: 30px;
 }
 .about-us-text .social p {
   font-size: 1.3rem;
