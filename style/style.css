@@ -470,7 +470,6 @@ section {
 }
 
 .footer {
-  margin-top: 2rem;
   background: #ff5d8f;
   color: #fbf4f6;
   padding: 40px 20px;
@@ -490,7 +489,6 @@ section {
 @media (max-width: 700px) {
   .footer-content {
     flex-direction: column;
-    align-items: center;
   }
 }
 
@@ -498,37 +496,30 @@ section {
   flex: 1;
   display: flex;
   flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
 }
 .footer-column h3 {
   font-size: 1.2rem;
   margin-bottom: 15px;
   color: #fbf4f6;
 }
-@media (max-width: 768px) {
+@media screen and (min-width: 700px) {
   .footer-column {
-    text-align: center;
+    align-items: center;
   }
 }
 
 .footer-logo {
+  align-self: flex-start;
   width: 150px;
-  align-self: center;
-}
-@media screen and (min-width: 700px) {
-  .footer-logo {
-    align-self: flex-start;
-  }
 }
 
 .footer-description {
   font-size: 0.9rem;
   line-height: 1.5;
   margin-bottom: 15px;
-}
-@media screen and (min-width: 700px) {
-  .footer-description {
-    text-align: left;
-  }
+  text-align: left;
 }
 
 .copyright {
@@ -541,11 +532,6 @@ section {
 .footer-links li {
   margin-bottom: 10px;
   text-align: left;
-}
-@media screen and (min-width: 700px) {
-  .footer-links li {
-    transform: translateX(40%);
-  }
 }
 .footer-links a {
   color: #fbf4f6;
@@ -1045,6 +1031,7 @@ section {
   max-width: none;
   width: 100%;
   padding: 0;
+  margin-bottom: 0;
 }
 
 .about-us-container {
