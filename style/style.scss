@@ -67,9 +67,6 @@
 	color: $light-color;
 	font-weight: bold;
 	max-width: 400px;
-	/* 	@media screen and (min-width: 700px) {
-		font-size: 1rem;
-	} */
 }
 .cta-section {
 	display: flex;
@@ -160,14 +157,26 @@
 	}
 
 	@media screen and (min-width: 700px) {
-		// max-width: 1200px;
 		grid-template-columns: repeat(3, 1fr);
 	}
 }
+
+.elegance-card {
+	background: url("../assets/dresses/card_1.jpg");
+}
+.quality-card {
+	background: url("../assets/dresses/card_2.jpg");
+}
+.second-life-card {
+	background: url("../assets/dresses/card_3.jpg");
+}
+
 .reason {
-	background: url("../assets/dresses/preview_10.png");
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.5);
 	background-blend-mode: multiply;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	padding: 1rem;
 	display: flex;
 	flex-direction: column;
@@ -191,10 +200,6 @@
 		font-size: 0.95rem;
 		line-height: 1.6;
 		text-align: justify;
-	}
-
-	@media screen and (min-width: 700px) {
-		// aspect-ratio: 1;
 	}
 }
 
