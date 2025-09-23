@@ -1,6 +1,7 @@
 @import "reset";
 @import "animations";
 @import "navbar";
+@import "error";
 @import "footer";
 
 // Mixins
@@ -199,7 +200,6 @@
 		margin-top: 0.8rem;
 		font-size: 0.95rem;
 		line-height: 1.6;
-		text-align: justify;
 	}
 }
 
