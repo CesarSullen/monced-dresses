@@ -297,23 +297,6 @@ section {
     opacity: 0;
   }
 }
-.floating {
-  transform: translateZ(0);
-  display: inline-block;
-  animation: floatY 4s ease-in-out infinite;
-}
-
-@keyframes floatY {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-8px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 .nav {
   position: sticky;
   top: 0;
@@ -493,13 +476,9 @@ section {
   justify-content: center;
   min-height: 100vh;
   padding: 2rem;
-  background-image: url(../assets/error-image.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.8);
-  background-blend-mode: multiply;
   color: #ff5d8f;
+  position: relative;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .error-container {
@@ -508,12 +487,15 @@ section {
 }
 
 .error-image {
-  width: 100%;
-  max-width: 250px;
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+  filter: opacity(0.3);
 }
 @media screen and (min-width: 768px) {
   .error-image {
-    max-width: 350px;
+    height: unset;
+    width: 100%;
   }
 }
 
@@ -532,7 +514,7 @@ section {
 }
 
 .error-code {
-  font-family: "Alice";
+  font-family: Ubuntu;
   font-size: 6rem;
   text-shadow: 2px 2px 6px rgba(25, 24, 31, 0.1);
   line-height: 0.7;
@@ -556,11 +538,14 @@ section {
 .error-message {
   font-size: 1.2rem;
   max-width: 500px;
+  font-weight: bold;
 }
 
 .error-button {
-  max-width: 350px;
+  max-width: 250px;
   padding: 0.75rem 2rem;
+  position: absolute;
+  bottom: 10%;
 }
 
 .footer {

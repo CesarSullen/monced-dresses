@@ -128,21 +128,3 @@
 		opacity: 0;
 	}
 }
-
-.floating {
-	transform: translateZ(0);
-	display: inline-block;
-	animation: floatY 4s ease-in-out infinite;
-}
-
-@keyframes floatY {
-	0% {
-		transform: translateY(0);
-	}
-	50% {
-		transform: translateY(-8px);
-	}
-	100% {
-		transform: translateY(0);
-	}
-}
