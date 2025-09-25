@@ -66,8 +66,10 @@
 
 .error-button {
 	@extend .btn;
-	max-width: 250px;
+	width: 90%;
+	max-width: 350px;
 	padding: 0.75rem 2rem;
 	position: absolute;
 	bottom: 10%;
+	text-wrap: nowrap;
 }
