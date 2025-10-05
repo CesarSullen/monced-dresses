@@ -1,0 +1,112 @@
+.gallery-container {
+	padding: 2rem;
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	border-top: $border-general;
+	padding-top: 3rem;
+
+	.section-title,
+	.section-subtitle {
+		color: $dark-color;
+	}
+
+	.section-subtitle {
+		max-width: 600px;
+		margin: 0 auto 3rem;
+		font-family: "Poppins";
+	}
+}
+
+.tabs-container {
+	margin-bottom: 3rem;
+}
+
+.tab-input {
+	display: none;
+}
+
+.tab-labels {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2rem;
+	gap: 0.5rem;
+	flex-wrap: wrap;
+}
+
+.tab-label {
+	padding: 0.75rem 1.5rem;
+	background: transparent;
+	border: 2px solid $primary-color;
+	color: $dark-color;
+	cursor: pointer;
+	border-radius: $border-radius-general;
+	font-weight: 600;
+	letter-spacing: 1px;
+	transition: all 0.3s ease;
+	min-width: 120px;
+	text-align: center;
+
+	&:hover {
+		background: $primary-color;
+		color: $secondary-color;
+	}
+}
+
+.tab-content {
+	display: none;
+}
+
+#dresses-tab:checked ~ .tab-labels label[for="dresses-tab"],
+#tops-tab:checked ~ .tab-labels label[for="tops-tab"] {
+	background: $primary-color;
+	color: $secondary-color;
+}
+
+#dresses-tab:checked ~ .tab-contents .tab-content:nth-of-type(1),
+#tops-tab:checked ~ .tab-contents .tab-content:nth-of-type(2) {
+	display: block;
+}
+
+.gallery-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 1.5rem;
+	margin-bottom: 3rem;
+}
+
+.gallery-item {
+	@extend .card;
+
+	.gallery-image {
+		width: 100%;
+		height: 300px;
+		object-fit: cover;
+		display: block;
+	}
+
+	.card-content {
+		padding: 1.5rem;
+		text-align: center;
+
+		.item-title {
+			font-size: 1.2rem;
+			@extend .bold;
+			color: $dark-color;
+			margin-bottom: 0.5rem;
+		}
+
+		.item-price {
+			font-size: 1.1rem;
+			@extend .important-text;
+			font-weight: 600;
+			margin-bottom: 1rem;
+		}
+	}
+
+	&:hover {
+		.gallery-image {
+			transform: scale(1.05);
+		}
+	}
+}

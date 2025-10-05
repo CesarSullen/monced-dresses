@@ -31,11 +31,11 @@
   src: url("../typography/Alice-Regular.ttf") format("truetype");
   font-weight: 400;
 }
-.important-text {
+.important-text, .gallery-item .card-content .item-price {
   color: #ff5d8f;
 }
 
-.bold {
+.bold, .gallery-item .card-content .item-title {
   font-weight: 600;
 }
 
@@ -159,19 +159,19 @@ section {
   font-size: 1.2rem;
 }
 
-.card {
+.card, .gallery-item {
   border-radius: 12px;
   background: #f8f5f2;
   overflow: hidden;
   border: solid 1px #ff5d8f;
 }
-.card .card-content {
+.card .card-content, .gallery-item .card-content {
   padding: 1rem;
   gap: 10px;
   display: flex;
   flex-direction: column;
 }
-.card:hover {
+.card:hover, .gallery-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 20px rgba(255, 93, 143, 0.8);
 }
@@ -554,6 +554,104 @@ section {
   max-width: 350px;
   padding: 0.75rem 2rem;
   text-wrap: nowrap;
+}
+
+.gallery-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  border-top: solid 1px rgba(255, 93, 143, 0.4);
+  padding-top: 3rem;
+}
+.gallery-container .section-title,
+.gallery-container .section-subtitle {
+  color: #19181f;
+}
+.gallery-container .section-subtitle {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  font-family: "Poppins";
+}
+
+.tabs-container {
+  margin-bottom: 3rem;
+}
+
+.tab-input {
+  display: none;
+}
+
+.tab-labels {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tab-label {
+  padding: 0.75rem 1.5rem;
+  background: transparent;
+  border: 2px solid #ff5d8f;
+  color: #19181f;
+  cursor: pointer;
+  border-radius: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  min-width: 120px;
+  text-align: center;
+}
+.tab-label:hover {
+  background: #ff5d8f;
+  color: #f8f5f2;
+}
+
+.tab-content {
+  display: none;
+}
+
+#dresses-tab:checked ~ .tab-labels label[for=dresses-tab],
+#tops-tab:checked ~ .tab-labels label[for=tops-tab] {
+  background: #ff5d8f;
+  color: #f8f5f2;
+}
+
+#dresses-tab:checked ~ .tab-contents .tab-content:nth-of-type(1),
+#tops-tab:checked ~ .tab-contents .tab-content:nth-of-type(2) {
+  display: block;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.gallery-item .gallery-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+.gallery-item .card-content {
+  padding: 1.5rem;
+  text-align: center;
+}
+.gallery-item .card-content .item-title {
+  font-size: 1.2rem;
+  color: #19181f;
+  margin-bottom: 0.5rem;
+}
+.gallery-item .card-content .item-price {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.gallery-item:hover .gallery-image {
+  transform: scale(1.05);
 }
 
 .footer {
