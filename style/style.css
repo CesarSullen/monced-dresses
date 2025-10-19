@@ -605,7 +605,7 @@ section {
   z-index: 0;
   transform: translateX(0);
 }
-#tops-tab:checked ~ .tab-labels::before {
+#otros-tab:checked ~ .tab-labels::before {
   transform: translateX(100%);
 }
 
@@ -625,7 +625,7 @@ section {
 }
 
 #dresses-tab:checked ~ .tab-labels label[for=dresses-tab],
-#tops-tab:checked ~ .tab-labels label[for=tops-tab] {
+#otros-tab:checked ~ .tab-labels label[for=otros-tab] {
   color: #f8f5f2;
 }
 
@@ -634,7 +634,7 @@ section {
 }
 
 #dresses-tab:checked ~ .tab-contents .tab-content:nth-of-type(1),
-#tops-tab:checked ~ .tab-contents .tab-content:nth-of-type(2) {
+#otros-tab:checked ~ .tab-contents .tab-content:nth-of-type(2) {
   display: block;
 }
 
@@ -663,15 +663,15 @@ section {
   z-index: 1;
   transition: all 0.2s ease-out;
 }
+.gallery-item:hover {
+  transform: scale(1.05);
+}
 .gallery-item .gallery-image {
   border-radius: 12px;
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
-}
-.gallery-item:hover {
-  transform: scale(1.05);
 }
 .gallery-item .gallery-item-name {
   position: absolute;
@@ -959,15 +959,15 @@ section {
 }
 
 .elegance-card {
-  background: url("../assets/dresses/why_1.jpg");
+  background: url("../assets/clothing/why_1.jpg");
 }
 
 .quality-card {
-  background: url("../assets/dresses/why_2.jpg");
+  background: url("../assets/clothing/why_2.jpg");
 }
 
 .second-life-card {
-  background: url("../assets/dresses/why_3.jpg");
+  background: url("../assets/clothing/why_3.jpg");
 }
 
 .reason {
