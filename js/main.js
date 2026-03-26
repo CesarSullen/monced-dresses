@@ -26,12 +26,12 @@ links.forEach((link) =>
 		sideBar.style.transform = "translateX(200%)";
 		body.style.overflowY = "auto";
 		toggleBtn.classList.toggle("toggled");
-	})
+	}),
 );
 
 // Interception Observer
 const sections = document.querySelectorAll(
-	".fade-in, .rotate-in, .rotate-in-right, .zoom-in, .blur-out"
+	".fade-in, .rotate-in, .zoom-in, .blur-out",
 );
 
 const observer = new IntersectionObserver(
@@ -45,7 +45,7 @@ const observer = new IntersectionObserver(
 	},
 	{
 		threshold: 0.1,
-	}
+	},
 );
 
 sections.forEach((section) => {
